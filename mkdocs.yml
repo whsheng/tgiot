@@ -1,1 +1,37 @@
-site_name: My Docs
+
+# Project infomation
+site_name: '天工物联'
+site_description: '天工物联 万物互联'
+site_author: 'Mr.Wang'
+site_url: 
+
+# Repository
+repo_name: 'GitHub'
+repo_url : 'https://github.com/whsheng/tgiot.git'
+
+# Copyright
+copyright: 'Copyright (c) 2016 by Mr.wang'
+
+# docs_dir: 'docs'
+# theme: 'material'
+
+# pages
+pages:
+  - 协议: 'index.md'
+  - 关于: 'about.md'
+
+# options 
+extra:
+  palette:
+    primary: 'indigo'
+    accent: 'light blue'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  author:
+    github: gis_gps@126.com'
+
+
+markdown_extensions:
+  - admonition
+  - tables
