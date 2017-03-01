@@ -1,5 +1,5 @@
 
-** 智能车载设备通讯规约「Device Communication Protocol,DCP」**
+**智能车载设备通讯规约「Device Communication Protocol,DCP」**
 
 ---
 
