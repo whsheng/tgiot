@@ -32,11 +32,11 @@ version | msg_head | msg_body | timestamp
 
 ```json
 {
-  "version":1,            
-  "msg_head":{             
-    "msg_id":1,  
+  "version":1,
+  "msg_head":{
+    "msg_id":1,
     "deviceid":"11234344242AF32", 
-    "msg_seq":1,    
+    "msg_seq":1,
     "msg_res":0 
     },
   "msg_body":{
@@ -95,7 +95,7 @@ timestamp | Int | 时间戳
 #### 位置信息上报
 
 + 消息ID:0x0201
-+ 位置信息上报的消息体是由``位置基本信息``和``位置附加信息``两项组成，其中``位置附加信息``是由各位置附加信息项组合，也可没有。
++ 位置信息上报的消息体是由``位置基本信息``和``位置附加信息``两项组成，其中``位置附加信息``是由各位置附加信息项组合,如:基站信息等，也可为空。
 + 位置基本信息数据格式如下：
 
 ```
@@ -110,7 +110,28 @@ timestamp | Int | 时间戳
   "gpstime":134343434,//GPS时间戳
   "satelite":4,  //卫星颗数
   "gsm":24,  //GSM信号强度
-  "battery":32.8  //电瓶电压值
+  "battery":32.8,  //电瓶电压值
+  "mileage":11438.2, //对应车上的里程表数
+}
+"pos_ext" :{
+  "cell":[
+    {
+      "mcc":460,//终端国家标识  
+      "mnc":0,//终端运营商标识 0移动 1联调
+      "lac":1234, //区号
+      "cellid":32,  //基站号
+      "dbm":23,  //信号强度
+      "rssi":233
+    },
+    {
+      "mcc":460,
+      "mnc":1,
+      "lac":2234,
+      "cellid":42,
+      "dbm":44,
+      "rssi":322
+    }
+  ]
 }
 ```
 
@@ -144,8 +165,8 @@ timestamp | Int | 时间戳
 
 ```
 {
-  "version":1,             
-  "msg_head":{             
+  "version":1,
+  "msg_head":{
     "msg_id":0x8201,       
     "deviceid":"32位长度",   
     "msg_seq":1112343,
