@@ -104,6 +104,7 @@ CREATE TABLE `t_account` (
     `is_enable` BIT NOT NULL COMMENT '是否可用',
     `nick_name` VARCHAR(32) NOT NULL COMMENT '昵称',
     `avatar_url` VARCHAR(128) NOT NULL COMMENT '账号头像URL',
+    `channel_id` BIGINT COMMENT '渠道ID',
     PRIMARY KEY (`id`, `account`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
