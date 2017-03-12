@@ -9,6 +9,8 @@
 
 ### [通讯规约](./docs/dcp.md)
 
+### [数据结构](./docs/db.md)
+
 ### [API声明](./docs/api.md)
 
 ### [任务进度](https://trello.com/b/7GZaRFl7)
