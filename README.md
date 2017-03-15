@@ -7,7 +7,7 @@
 
 ### [需求清单](./docs/requirements.md)
 
-### [通讯规约](./docs/dcp.md)
+### [通讯规约](./docs/dcp_v2.md)
 
 ### [数据结构](./docs/db.md)
 
